@@ -1,0 +1,42 @@
+
+.container div.flex{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+#image{
+    width: 40px;
+}
+.flex-child{
+    display: flex;
+}
+
+.flex-child h2{
+    margin-right: 10px;
+    margin-top: 3px;
+    font-size: 25px;
+    font-family: serif;
+    font-weight: lighter;
+}
+
+.search-bar{
+    width: 140%;
+    margin-right: 10px;
+}
+
+@media (max-width : 520px){
+    .flex{
+        flex-direction: column;
+        align-items: center;
+    }
+    .flex-child{
+        margin-bottom: 15px;
+    }
+}
+@media (max-width : 372px){
+    .search-bar{
+        width: 200px;
+    }
+}
