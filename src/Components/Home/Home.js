@@ -12,7 +12,6 @@ export default function Home() {
         try {
             const weather_Res = await fetch(`http://api.weatherapi.com/v1/current.json?key=1f3390b247284d059cb82749232209&q=${value}&aqi=yes`)
             const weather_Data = await weather_Res.json();
-            console.log(weather_Res)
             setState(weather_Data);
             setSearchValue('');
         } catch (err) {
